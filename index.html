@@ -1,1 +1,41 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6c4002b2ac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Task Manager App</title>
+</head>
+<body>
+    <h1>Task Manager App</h1>
+    <div id="container">
+        <div id="open">OPEN
+        </br></br>
+            <!-- <div id="added-values">
+            </div> -->
+            <input id="new-items" type="text">
+            <button id="btn" type="button"><i class="fa-solid fa-plus"></i></button>
+            <div id="tasks" ondrop="drop(event)" ondragleave="dragLeft(event)" ondragenter="dragEntered(event)" ondragover="allowDrop(event)">
+            </div>
+        </div>
+        <div id="progress"> IN PROGRESS
+          </br></br>
+          <div id="inProgress" ondrop="drop(event)" ondragleave="dragLeft(event)" ondragenter="dragEntered(event)" ondragover="allowDrop(event)">
+          </div>
+        </div>
+        <div id="review">IN REVIEW
+          </br></br>
+          <div id="inReview" ondrop="drop(event)" ondragleave="dragLeft(event)" ondragenter="dragEntered(event)"  ondragover="allowDrop(event)">
+          </div>
+        </div>
+        <div id="done">DONE
+          </br></br>
+          <div id="completed" ondrop="drop(event)" ondragleave="dragLeft(event)" ondragenter="dragEntered(event)" ondragover="allowDrop(event)">
+          </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
